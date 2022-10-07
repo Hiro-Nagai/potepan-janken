@@ -27,8 +27,7 @@ class Jankengame
         else 
             puts "▶︎負け"
             @game_result = "lose"
-        end  
-    
+        end
     if @game_result == "draw"
         janken
     elsif @game_result == "win"
@@ -45,7 +44,8 @@ class Jankengame
         else
             puts "あなた：#{directions[player_finger]}"
             puts "相手  ：#{directions[program_face]}"
-            puts "▶︎負け"
+            puts "▶︎勝敗つかず、もう一度じゃんけん"
+            janken
         end        
     elsif @game_result == "lose"
         puts "相手　　：あっち向いて..."
@@ -61,7 +61,8 @@ class Jankengame
         else
             puts "あなた：#{directions[player_face]}"
             puts "相手  ：#{directions[program_finger]}"
-            puts "▶︎勝敗つかず"
+            puts "▶︎勝敗つかず、もう一度じゃんけん"
+            janken
         end    
     end
     end
