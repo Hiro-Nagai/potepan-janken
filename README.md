@@ -1,2 +1,0 @@
-# potepan-janken
-# potepan-janken
